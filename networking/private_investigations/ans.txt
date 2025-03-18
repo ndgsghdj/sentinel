@@ -1,0 +1,78 @@
+1. ifconfig
+
+wlp2s0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.12.145.165  netmask 255.255.255.0  broadcast 10.12.145.255
+        inet6 fe80::f9a5:360d:b535:bc1d  prefixlen 64  scopeid 0x20<link>
+        ether 8c:c8:4b:94:ed:85  txqueuelen 1000  (Ethernet)
+        RX packets 1000798  bytes 959946928 (959.9 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 377651  bytes 146326826 (146.3 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+ip address: 10.12.145.165, private
+falls within 10.x.x.x domain
+
+2. curl https://ipinfo.io/ip
+
+IP address falls within the 111.x.x.x domain, indicating that this is a public address.
+
+3. curl https://ipinfo.io
+
+{
+  "ip": "111.65.58.102",
+  "city": "Singapore",
+  "region": "Singapore",
+  "country": "SG",
+  "loc": "1.2897,103.8501",
+  "postal": "018989",
+  "timezone": "Asia/Singapore",
+  "readme": "https://ipinfo.io/missingauth"
+}
+
+Country and city is Singapore.
+
+4. nslookup www.google.com
+
+Server:		127.0.0.53
+Address:	127.0.0.53#53
+
+Non-authoritative answer:
+Name:	www.google.com
+Address: 172.217.194.105
+Name:	www.google.com
+Address: 172.217.194.147
+Name:	www.google.com
+Address: 172.217.194.106
+Name:	www.google.com
+Address: 172.217.194.104
+Name:	www.google.com
+Address: 172.217.194.103
+Name:	www.google.com
+Address: 172.217.194.99
+Name:	www.google.com
+Address: 2404:6800:4003:c1a::68
+Name:	www.google.com
+Address: 2404:6800:4003:c1a::93
+Name:	www.google.com
+Address: 2404:6800:4003:c1a::67
+Name:	www.google.com
+Address: 2404:6800:4003:c1a::6a
+
+IP address is 172.217.194.105
+
+curl https://ipinfo.io/172.217.194.105
+
+{
+  "ip": "172.217.194.105",
+  "hostname": "si-in-f105.1e100.net",
+  "city": "Singapore",
+  "region": "Singapore",
+  "country": "SG",
+  "loc": "1.2897,103.8501",
+  "org": "AS15169 Google LLC",
+  "postal": "018989",
+  "timezone": "Asia/Singapore",
+  "readme": "https://ipinfo.io/missingauth"
+}
+
+Despite the central server being located in the United States, requests from Singapore are first directed to a server in Asia or Singapore.

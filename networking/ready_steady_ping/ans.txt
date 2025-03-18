@@ -1,0 +1,9 @@
+Q1. ping -c 10 localhost - 0.057 ms
+
+Q2.
+qoo10.sg - 82.384 ms
+lazada.sg - 89.463 ms
+dbs.com.sg - 96.685 ms
+beyonce.com - 139.287 ms
+oscars.org - 278.345 ms
+disney.com - 375.318 ms
